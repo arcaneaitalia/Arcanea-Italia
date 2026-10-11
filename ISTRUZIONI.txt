@@ -1,0 +1,11 @@
+ARCANEA ITALIA — PROGETTO
+
+1) Apri index.html e inserisci URL Supabase e chiave pubblica/anon dove richiesto. Non inserire mai la service_role nel codice HTML.
+2) Crea un progetto Supabase e incolla supabase/schema.sql nel SQL Editor, quindi esegui.
+3) In Supabase Authentication abilita Email e conferma email; configura URL di reindirizzamento per il dominio Netlify.
+4) Pubblica la cartella del progetto su Netlify collegando un repository Git. Lascia netlify.toml, package.json e la cartella netlify nella root.
+5) In Netlify > Site configuration > Environment variables imposta SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY e EPHEMERIS_API_URL. La service role è segreta e solo server-side.
+6) EPHEMERIS_API_URL deve essere l'URL BASE di un'istanza Swiss Ephemeris API attiva e accessibile. Non è incluso un servizio hosting gratuito garantito.
+7) Ridistribuisci il sito dopo aver configurato le variabili.
+
+Il gratta e vinci è registrato lato server per account e rifiuta un nuovo tentativo entro 7 giorni. Non impedisce account multipli della stessa persona. L'oroscopo usa posizioni planetarie dal servizio configurato; le interpretazioni sono testi astrologici generati automaticamente e non previsioni scientificamente certe. Prima di lanciare premi pubblicamente, verifica gli obblighi italiani per le manifestazioni a premio.
